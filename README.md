@@ -72,6 +72,7 @@ To run the tests:
 | iam\_role\_tags | Additional tags for the IAM role | map(string) | `{}` | no |
 | iam\_role\_name\_prefix | A unique role name beginning with the specified prefix | string | `"lambda"` | no |
 | iam\_role\_policy\_name\_prefix | A unique policy name beginning with the specified prefix | string | `"lambda-policy-"` | no |
+| iam\_role\_boundary\_policy\_arn | The ARN of the policy that is used to set the permissions boundary for the role | string | `null` | no |
 | kms\_key\_arn | ARN of the KMS key used for decrypting slack webhook url | string | `""` | no |
 | lambda\_description | The description of the Lambda function | string | `"null"` | no |
 | lambda\_function\_name | The name of the Lambda function to create | string | `"notify_slack"` | no |
